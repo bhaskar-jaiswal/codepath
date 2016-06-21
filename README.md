@@ -12,10 +12,10 @@ Time spent: 12-14 hours spent in total
 
 The following **required** functionality is completed:
 
-* User can successfully add and remove items from the todo list.
-* User can tap a todo item in the list and bring up a screen which will list
+* [X] User can successfully add and remove items from the todo list.
+*  [X] User can tap a todo item in the list and bring up a screen which will list
  task details. It will also provide the option to edit/delete or cancel the popup screen. The edited changes will reflect in the task description.
-* User can persist todo items using sqlite and retrieve them properly on app restart
+*  [X] User can persist todo items using sqlite and retrieve them properly on app restart
 
 The following **optional** features are implemented:
 
