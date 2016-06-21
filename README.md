@@ -6,7 +6,7 @@ Papyrus is an android app that allows building a todo list and basic todo items 
 
 Submitted by: Bhaskar Jaiswal
 
-Time spent: 12-14 hours spent in total
+Time spent: **12-14** hours spent in total
 
 ## User Stories
 
