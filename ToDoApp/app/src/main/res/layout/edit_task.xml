@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_edit"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="#795D07">
+
+        <TextView
+            android:id="@+id/toolbar_title_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Papyrus"
+            android:textColor="@android:color/white"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="left"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:background="#8EBD1A"
+        android:layout_below="@+id/toolbar_edit"
+        android:id="@+id/vLine_separator0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:paddingTop="17dp"
+        android:id="@+id/tvTaskName"
+        android:text="Task Name"
+        android:layout_below="@id/vLine_separator0"
+        android:textSize="18sp"
+        android:textColor="#bd371a"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etTaskName"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Fill In Your Task"
+        android:layout_alignBottom="@+id/tvTaskName"
+        android:textSize="17sp"
+        android:textColor="#5f2313"/>
+
+    <View
+        android:layout_below="@+id/tvTaskName"
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:background="#8EBD1A"
+        android:id="@+id/vLine_separator1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/tvDueDate"
+        android:paddingTop="18dp"
+        android:text="Due Date"
+        android:layout_below="@+id/tvTaskName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textColor="#bd371a"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+            android:paddingTop="18dp"
+        android:id="@+id/tvDatePickerFragment"
+        android:text="Enter Due Date"
+        android:layout_below="@+id/etTaskName"
+        android:layout_alignBottom="@+id/tvDueDate"
+        android:onClick="onSetDateAction"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="17sp"
+        android:textColor="#5f2313"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:background="#8EBD1A"
+        android:id="@+id/vLine_separator2"
+        android:layout_below="@+id/tvDueDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:paddingTop="18dp"
+        android:text="Task Notes"
+        android:id="@+id/tvTaskNotes"
+        android:layout_below="@+id/vLine_separator2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textColor="#bd371a"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:paddingTop="16dp"
+        android:id="@+id/etTaskNotes"
+        android:layout_below="@+id/vLine_separator2"
+        android:hint="Enter Your Notes"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/tvTaskNotes"
+        android:textSize="17sp"
+        android:textColor="#5f2313"/>
+
+    <View
+        android:layout_below="@+id/etTaskNotes"
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:background="#8EBD1A"
+        android:id="@+id/vLine_separator3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:text="Priority"
+        android:id="@+id/tvPriority"
+        android:layout_below="@+id/vLine_separator3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textColor="#bd371a"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:id="@+id/spinnerPriority"
+        android:layout_below="@+id/vLine_separator3"
+        android:layout_alignLeft="@+id/etTaskNotes"
+        android:layout_alignStart="@+id/etTaskNotes"
+        android:textColor="#5f2313"/>
+
+    <View
+        android:layout_below="@+id/spinnerPriority"
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:background="#8EBD1A"
+        android:id="@+id/vLine_separator4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:text="Status"
+        android:id="@+id/tvStatus"
+        android:layout_below="@+id/vLine_separator4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textColor="#bd371a"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:id="@+id/spinnerStatus"
+        android:layout_below="@+id/vLine_separator3"
+        android:layout_alignTop="@id/tvStatus"
+        android:layout_alignLeft="@+id/spinnerPriority"
+        android:layout_alignStart="@+id/spinnerPriority"
+        android:textSize="20sp"
+        android:textColor="#5f2313"/>
+
+    <View
+        android:layout_below="@+id/spinnerStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:background="#8EBD1A"
+        android:id="@+id/vLine_separator5" />
+
+</RelativeLayout>
