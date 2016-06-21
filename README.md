@@ -33,7 +33,7 @@ Papyrus allows users to retrieve a deleted task within the first 3 seconds from 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://imgur.com/sU2KJl8' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/sU2KJl8.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
