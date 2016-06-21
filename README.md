@@ -1,10 +1,8 @@
-# codepath
+# Pre-work - *Papyrus*
 
-# Pre-work - Papyrus
+** Papyrus** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
 
-Papyrus is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
-
-Submitted by: Bhaskar Jaiswal
+Submitted by: **Bhaskar Jaiswal**
 
 Time spent: **12-14** hours spent in total
 
@@ -12,10 +10,9 @@ Time spent: **12-14** hours spent in total
 
 The following **required** functionality is completed:
 
-* [X] User can successfully add and remove items from the todo list.
-*  [X] User can tap a todo item in the list and bring up a screen which will list
- task details. It will also provide the option to edit/delete or cancel the popup screen. The edited changes will reflect in the task description.
-*  [X] User can persist todo items using sqlite and retrieve them properly on app restart
+* [X] User can **successfully add and remove items** from the todo list
+* [X] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list.
+* [X] User can **persist todo items** and retrieve them properly on app restart
 
 The following **optional** features are implemented:
 
@@ -44,14 +41,14 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
-1) Using CustomAdapter to list task name and priorities
-2) Changing colors on the spinners.
-3) Changing the background color on the icons
+1) Using CustomAdapter to list task name and priorities 
+2) Changing colors on the spinners. 
+3) Changing the background color on the icons 
 4) Returning result from Dialog fragment to Activity
 
 ## License
 
-    Copyright [2016] [Lice]
+    Copyright [2016] [LiceCap]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
