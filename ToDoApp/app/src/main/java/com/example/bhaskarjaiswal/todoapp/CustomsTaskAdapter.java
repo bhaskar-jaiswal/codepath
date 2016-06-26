@@ -16,6 +16,11 @@ import java.util.ArrayList;
  */
 public class CustomsTaskAdapter extends ArrayAdapter<Tasks> {
 
+    private static class ViewHolder{
+        TextView tvTaskName;
+        TextView tvPriority;
+    }
+
     public CustomsTaskAdapter(Context context, ArrayList<Tasks> tasks) {
         super(context, 0, tasks);
     }
@@ -23,13 +28,20 @@ public class CustomsTaskAdapter extends ArrayAdapter<Tasks> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         Tasks task = getItem(position);
+
+        ViewHolder viewHolder;
         if (convertView == null) {
+            viewHolder = new ViewHolder();
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.task_list, parent, false);
+            viewHolder.tvTaskName = (TextView) convertView.findViewById(R.id.tvTaskName);
+            viewHolder.tvPriority = (TextView) convertView.findViewById(R.id.tvPriority);
+            convertView.setTag(viewHolder);
+        }else{
+            viewHolder = (ViewHolder) convertView.getTag();
         }
-        TextView tvTaskName = (TextView) convertView.findViewById(R.id.tvTaskName);
-        TextView tvPriority = (TextView) convertView.findViewById(R.id.tvPriority);
-        tvTaskName.setText(task.getTaskName());
-        tvPriority.setText(task.getPriority().toString());
+
+        viewHolder.tvTaskName.setText(task.getTaskName());
+        viewHolder.tvPriority.setText(task.getPriority().toString());
         return convertView;
     }
 }
